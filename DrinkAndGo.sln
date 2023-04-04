@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinkAndGo", "DrinkAndGo\DrinkAndGo.csproj", "{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrinkAndGo", "DrinkAndGo\DrinkAndGo.csproj", "{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaManager-Maamoun", "..\CinemaManager-Maamoun\CinemaManager-Maamoun\CinemaManager-Maamoun.csproj", "{53CA874D-C038-4253-ABE7-A321A72BA864}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
