@@ -11,9 +11,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // DbContext Configuration
+var DbHost = Environment.GetEnvironmentVariable("DB_HOST");
+var DbName = Environment.GetEnvironmentVariable("DB_NAME");
+var connectionString = $"Data Source={DbHost};Initial Catalog={DbName};Integrated Security=True;Pooling=False";
+
 builder.Services.AddDbContext<AppDbContext>(
-    options => options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DrinkCS")
+    options => 
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString(connectionString)
         ));
 
 // Services Configuration

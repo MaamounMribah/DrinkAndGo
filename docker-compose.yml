@@ -1,0 +1,30 @@
+version: '3.4'
+
+networks:
+  drinkandgoapp:
+
+services:
+  DrinkAndGoDb:
+    container_name: container_db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - 8002:1443
+    environment:
+      - ACCEPT_EULA=Y
+    networks:
+      - drinkandgoapp
+  drinkandgo:
+    container_name: container_app
+    image: ${DOCKER_REGISTRY-}drinkandgo
+    build:
+      context: .
+      dockerfile: DrinkAndGo/Dockerfile
+    ports:
+      - 8001:80 
+    depends_on: 
+      - DrinkAndGoDb
+    environment: 
+      - DB_HOST=(localdb)\\mssqllocaldb
+      - DB_NAME=DrinkAndGoDb
+    networks:
+      - drinkandgoapp
