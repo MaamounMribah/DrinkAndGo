@@ -5,7 +5,11 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrinkAndGo", "DrinkAndGo\DrinkAndGo.csproj", "{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}"
 EndProject
+<<<<<<< Updated upstream
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6FC6F454-9572-43F8-8F2B-31B80490C07E}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaManager-Maamoun", "..\CinemaManager-Maamoun\CinemaManager-Maamoun\CinemaManager-Maamoun.csproj", "{53CA874D-C038-4253-ABE7-A321A72BA864}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,17 @@ Global
 		{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE29896B-8F4B-45F4-8BC1-7CCFB9975AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{6FC6F454-9572-43F8-8F2B-31B80490C07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6FC6F454-9572-43F8-8F2B-31B80490C07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FC6F454-9572-43F8-8F2B-31B80490C07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FC6F454-9572-43F8-8F2B-31B80490C07E}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CA874D-C038-4253-ABE7-A321A72BA864}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
