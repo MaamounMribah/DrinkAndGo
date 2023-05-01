@@ -7,37 +7,17 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 builder.Services.AddControllersWithViews();
 
-<<<<<<< HEAD
-/*
-=======
-// DbContext Configuration
-<<<<<<< HEAD
->>>>>>> bcfdad5b5cabccbeb1dde04c8544f1609dbd00fb
-=======
->>>>>>> bcfdad5b5cabccbeb1dde04c8544f1609dbd00fb
-var DbHost = Environment.GetEnvironmentVariable("DB_HOST");
-var DbName = Environment.GetEnvironmentVariable("DB_NAME");
-var connectionString = $"Data Source={DbHost};Initial Catalog={DbName};Integrated Security=True;Pooling=False";
-*/
 
 builder.Services.AddDbContext<AppDbContext>(
-<<<<<<< HEAD
     options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DrinkCS")
 ));
 
 
-=======
-    options => 
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString(connectionString)
-        ));
->>>>>>> bcfdad5b5cabccbeb1dde04c8544f1609dbd00fb
 
-// Services Configuration
 builder.Services.AddTransient<ICategoryRepository,CategoryRepository>();
 builder.Services.AddTransient<IDrinkRepository, DrinkRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
