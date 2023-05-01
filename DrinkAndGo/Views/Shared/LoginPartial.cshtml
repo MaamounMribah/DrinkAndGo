@@ -3,19 +3,49 @@
 
 @inject SignInManager<IdentityUser> SignInManager
 
+    <style>
+                ul {
+                    list-style-type: none;
+                    margin: 10;
+                    padding: 10;
+                    overflow: hidden;
+                    background-color: #333;
+                }
+
+                li {
+                    float: left;
+                    display: inline;
+                }
+
+                    li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        display: inline;
+                    }
+
+                        /* Change the link color to #111 (black) on hover */
+                        li a:hover {
+                            background-color: #111;
+                        }
+                        </style>
+
 @if (SignInManager.IsSignedIn(User))
 {
     <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm"
           method="post" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
+            
             <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
         </ul>
     </form>
 }
 else
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li><a id="registerLink" asp-controller="Account" asp-action="Register"> Register </a></li>
-        <li><a id="loginLink" asp-controller="Account" asp-action="Login"> Log in </a></li>
+    <ul >
+        <li style="display:inline"><a id="registerLink" asp-controller="Account" asp-action="Register"> Register </a></li>
+        <li style="display:inline"><a id="loginLink" asp-controller="Account" asp-action="Login"> Log in </a></li>
     </ul>
 }
