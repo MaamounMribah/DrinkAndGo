@@ -14,6 +14,9 @@ builder.Services.AddControllersWithViews();
 /*
 =======
 // DbContext Configuration
+<<<<<<< HEAD
+>>>>>>> bcfdad5b5cabccbeb1dde04c8544f1609dbd00fb
+=======
 >>>>>>> bcfdad5b5cabccbeb1dde04c8544f1609dbd00fb
 var DbHost = Environment.GetEnvironmentVariable("DB_HOST");
 var DbName = Environment.GetEnvironmentVariable("DB_NAME");
